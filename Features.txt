@@ -1,0 +1,25 @@
+## High Priority
+
+-[]
+
+
+## Medium Priority
+
+-[]
+
+
+## Low Priority
+
+-[]
+
+
+## Ideas
+
+-[] Grad-Shafranov uniform sampling in space -> polygon integration for estimate
+-[] File source weight vs strength sampling
+-[] Bosch-Hale reactivity instead of Muir Distribution
+
+-[] Uniform Mesh Source (previous methods used)
+-[] Weight window estimation for tokamak (toroidal surfaces outward from the magnetic axis to start)
+-[] Test speed difference for source generation of File source vs a collection of point sources (spherical)
+-[] Sensitivity analysis on the profiles!
