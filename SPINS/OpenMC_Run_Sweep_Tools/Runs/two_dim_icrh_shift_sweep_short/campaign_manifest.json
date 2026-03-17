@@ -1,0 +1,114 @@
+{
+  "base_dir": "/home/btaczak/OpenMC_Run_Sweep_Tools/Runs/two_dim_icrh_shift_sweep_short",
+  "campaign_config": "/home/btaczak/OpenMC_Run_Sweep_Tools/Campaign_builder/campaign_config.yaml",
+  "total_combinations": 8,
+  "excluded_count": 0,
+  "valid_count": 8,
+  "valid_runs": [
+    {
+      "run_id": "center_shift_icrh_0_width_icrh_50_source_device_MANTA_source_scenario_default",
+      "run_path": "/home/btaczak/OpenMC_Run_Sweep_Tools/Runs/two_dim_icrh_shift_sweep_short/radius_455/triang_-0.5/center_shift_icrh_0_width_icrh_50_source_device_MANTA_source_scenario_default",
+      "parameters": {
+        "radius": 455,
+        "triang": -0.5,
+        "center_shift_icrh": 0,
+        "width_icrh": 50,
+        "source_device": "MANTA",
+        "source_scenario": "default"
+      },
+      "status": "pending"
+    },
+    {
+      "run_id": "center_shift_icrh_0_width_icrh_10_source_device_MANTA_source_scenario_default",
+      "run_path": "/home/btaczak/OpenMC_Run_Sweep_Tools/Runs/two_dim_icrh_shift_sweep_short/radius_455/triang_-0.5/center_shift_icrh_0_width_icrh_10_source_device_MANTA_source_scenario_default",
+      "parameters": {
+        "radius": 455,
+        "triang": -0.5,
+        "center_shift_icrh": 0,
+        "width_icrh": 10,
+        "source_device": "MANTA",
+        "source_scenario": "default"
+      },
+      "status": "pending"
+    },
+    {
+      "run_id": "center_shift_icrh_10_width_icrh_50_source_device_MANTA_source_scenario_default",
+      "run_path": "/home/btaczak/OpenMC_Run_Sweep_Tools/Runs/two_dim_icrh_shift_sweep_short/radius_455/triang_-0.5/center_shift_icrh_10_width_icrh_50_source_device_MANTA_source_scenario_default",
+      "parameters": {
+        "radius": 455,
+        "triang": -0.5,
+        "center_shift_icrh": 10,
+        "width_icrh": 50,
+        "source_device": "MANTA",
+        "source_scenario": "default"
+      },
+      "status": "pending"
+    },
+    {
+      "run_id": "center_shift_icrh_10_width_icrh_10_source_device_MANTA_source_scenario_default",
+      "run_path": "/home/btaczak/OpenMC_Run_Sweep_Tools/Runs/two_dim_icrh_shift_sweep_short/radius_455/triang_-0.5/center_shift_icrh_10_width_icrh_10_source_device_MANTA_source_scenario_default",
+      "parameters": {
+        "radius": 455,
+        "triang": -0.5,
+        "center_shift_icrh": 10,
+        "width_icrh": 10,
+        "source_device": "MANTA",
+        "source_scenario": "default"
+      },
+      "status": "pending"
+    },
+    {
+      "run_id": "center_shift_icrh_0_width_icrh_50_source_device_MANTA_source_scenario_default",
+      "run_path": "/home/btaczak/OpenMC_Run_Sweep_Tools/Runs/two_dim_icrh_shift_sweep_short/radius_455/triang_0.5/center_shift_icrh_0_width_icrh_50_source_device_MANTA_source_scenario_default",
+      "parameters": {
+        "radius": 455,
+        "triang": 0.5,
+        "center_shift_icrh": 0,
+        "width_icrh": 50,
+        "source_device": "MANTA",
+        "source_scenario": "default"
+      },
+      "status": "pending"
+    },
+    {
+      "run_id": "center_shift_icrh_0_width_icrh_10_source_device_MANTA_source_scenario_default",
+      "run_path": "/home/btaczak/OpenMC_Run_Sweep_Tools/Runs/two_dim_icrh_shift_sweep_short/radius_455/triang_0.5/center_shift_icrh_0_width_icrh_10_source_device_MANTA_source_scenario_default",
+      "parameters": {
+        "radius": 455,
+        "triang": 0.5,
+        "center_shift_icrh": 0,
+        "width_icrh": 10,
+        "source_device": "MANTA",
+        "source_scenario": "default"
+      },
+      "status": "pending"
+    },
+    {
+      "run_id": "center_shift_icrh_10_width_icrh_50_source_device_MANTA_source_scenario_default",
+      "run_path": "/home/btaczak/OpenMC_Run_Sweep_Tools/Runs/two_dim_icrh_shift_sweep_short/radius_455/triang_0.5/center_shift_icrh_10_width_icrh_50_source_device_MANTA_source_scenario_default",
+      "parameters": {
+        "radius": 455,
+        "triang": 0.5,
+        "center_shift_icrh": 10,
+        "width_icrh": 50,
+        "source_device": "MANTA",
+        "source_scenario": "default"
+      },
+      "status": "pending"
+    },
+    {
+      "run_id": "center_shift_icrh_10_width_icrh_10_source_device_MANTA_source_scenario_default",
+      "run_path": "/home/btaczak/OpenMC_Run_Sweep_Tools/Runs/two_dim_icrh_shift_sweep_short/radius_455/triang_0.5/center_shift_icrh_10_width_icrh_10_source_device_MANTA_source_scenario_default",
+      "parameters": {
+        "radius": 455,
+        "triang": 0.5,
+        "center_shift_icrh": 10,
+        "width_icrh": 10,
+        "source_device": "MANTA",
+        "source_scenario": "default"
+      },
+      "status": "pending"
+    }
+  ],
+  "excluded_runs": []
+}

@@ -1,0 +1,127 @@
+# =============================================================================
+# campaign_config.yaml
+# OpenMC Parametric Campaign Configuration — ISFNT-15
+# =============================================================================
+
+# --- Paths -------------------------------------------------------------------
+paths:
+  geometries_dir:          "~/OpenMC_Run_Sweep_Tools/Geometries/Common"
+  materials_dir:           "~/OpenMC_Run_Sweep_Tools/Materials"
+  sources_dir:             "~/OpenMC_Run_Sweep_Tools/Sources"
+  base_dir:                "~/OpenMC_Run_Sweep_Tools/Runs/two_dim_icrh_shift_sweep_short"
+  materials_file:          "~/OpenMC_Run_Sweep_Tools/Materials/materials.xml"
+  geometry_builder_script: "geometry_builder.py"
+  openmc_runner_template:  "openmc_run_template.sh"
+  openmc_runner_script:    "openmc_runner.py"
+
+# --- Parameter Space ---------------------------------------------------------
+# Exact key names must match the existing script's run_parameters dict.
+# Order controls itertools.product iteration order.
+parameters:
+  radius:
+    - 455        # MANTA reactor radius [cm]
+#    - 365        # ARC reactor radius [cm]
+  triang:
+    - -0.5       # Negative triangularity
+    - 0.5        # Positive triangularity
+  center_shift_icrh:
+    - 0          # ICRH duct x-offset from centre [cm]
+    - 10         # ICRH duct x-offset from centre [cm]
+  width_icrh:
+    - 50         # ICRH duct full width [cm]
+    - 10         # ICRH duct full width [cm]
+  source_device:
+    - "MANTA"
+    # - "ARC"
+  source_scenario:
+    - "default"
+    # - "20_current"
+    # - "20_density"
+    # - "20_temp"
+
+# --- Parent Folder Parameters ------------------------------------------------
+# Parameters used to create the nested parent directory structure.
+# Mirrors parent_folder_run_params in the existing script.
+parent_folder_params:
+  - radius
+  - triang
+
+# --- Exclusion Rules ---------------------------------------------------------
+# A combination is excluded when ALL conditions in a single rule are satisfied.
+#
+# Condition formats:
+#   Exact match:    param: value
+#   Operator match: param: {op: value}
+#     Supported ops: eq, neq, gt, gte, lt, lte
+#
+# Reproduces is_invalid() from the existing script exactly:
+#   if source_device == "ARC" and triang != 0.5         -> invalid
+#   if source_device == "ARC" and radius != 365         -> invalid
+#   if radius == 365 and triang != 0.5                  -> invalid
+#   if radius == 455 and source_device != "MANTA"       -> invalid
+#
+exclusions:
+  - reason: "ARC source device requires positive triangularity"
+    source_device: "ARC"
+    triang: {neq: 0.5}
+
+  - reason: "ARC source device requires ARC reactor radius (365 cm)"
+    source_device: "ARC"
+    radius: {neq: 365}
+
+  - reason: "ARC reactor radius requires positive triangularity"
+    radius: 365
+    triang: {neq: 0.5}
+
+  - reason: "MANTA reactor radius requires MANTA source device"
+    radius: 455
+    source_device: {neq: "MANTA"}
+
+# --- Simulation Settings -----------------------------------------------------
+simulation:
+  run_mode:  "fixed source"
+  batches:   10
+  particles: 10000
+
+# --- Tally Configuration -----------------------------------------------------
+tallies:
+  scores:
+    - "flux"
+    # - "heating"
+    # - "damage-energy"
+  energy_groups_MeV:
+    - 0.0
+    # - 6.25e-7
+    # - 1.0e-3
+    # - 1.0
+    - 20.0
+  energy_group_labels:
+    # - "Thermal (< 0.625 eV)"
+    # - "Epithermal (0.625 eV - 1 keV)"
+    # - "Fast (1 keV - 1 MeV)"
+    # - "High-Fast (1 - 20 MeV)"
+    - "Total Flux (< 20 MeV)"
+  tally_cells:
+    # - "outer_first_wall"
+    # - "inner_first_wall"
+    - "outer_breeder"
+    - "inner_breeder"
+    # - "upper_div"
+    # - "lower_div"
+    - "icrh_duct"
+  inboard_cells:
+    - "inner_first_wall"
+    - "inner_breeder"
+  outboard_cells:
+    - "outer_first_wall"
+    - "outer_breeder"
+
+# --- Plot Settings -----------------------------------------------------------
+plot:
+  figsize:        [12, 7]
+  dpi:            150
+  style:          "seaborn-v0_8-whitegrid"
+  colormap:       "tab20"
+  inboard_color:  "#1f77b4"
+  outboard_color: "#d62728"
+  font_size:      11

@@ -1,0 +1,434 @@
+[
+  {
+    "run_id": "center_shift_icrh_0_width_icrh_10_source_device_MANTA_source_scenario_default",
+    "parameters": {
+      "radius": 455,
+      "triang": -0.5,
+      "center_shift_icrh": 0,
+      "width_icrh": 10,
+      "source_device": "MANTA",
+      "source_scenario": "default"
+    },
+    "energy_bins_eV": [
+      0.0,
+      20000000.0
+    ],
+    "energy_group_labels": [
+      "Total Flux (< 20 MeV)"
+    ],
+    "cells": {
+      "outer_breeder": {
+        "flux": {
+          "mean": [
+            38.00964596107552
+          ],
+          "std_dev": [
+            0.15167898233298022
+          ]
+        }
+      },
+      "inner_breeder": {
+        "flux": {
+          "mean": [
+            34.47113727832948
+          ],
+          "std_dev": [
+            0.1474221953819541
+          ]
+        }
+      },
+      "icrh_duct": {
+        "flux": {
+          "mean": [
+            0.060086809552710674
+          ],
+          "std_dev": [
+            0.0013293596619621134
+          ]
+        }
+      }
+    },
+    "icrh_duct_end_current": {
+      "mean": 0.0,
+      "std_dev": 0.0
+    }
+  },
+  {
+    "run_id": "center_shift_icrh_0_width_icrh_50_source_device_MANTA_source_scenario_default",
+    "parameters": {
+      "radius": 455,
+      "triang": -0.5,
+      "center_shift_icrh": 0,
+      "width_icrh": 50,
+      "source_device": "MANTA",
+      "source_scenario": "default"
+    },
+    "energy_bins_eV": [
+      0.0,
+      20000000.0
+    ],
+    "energy_group_labels": [
+      "Total Flux (< 20 MeV)"
+    ],
+    "cells": {
+      "outer_breeder": {
+        "flux": {
+          "mean": [
+            38.009163767203994
+          ],
+          "std_dev": [
+            0.14303995252028803
+          ]
+        }
+      },
+      "inner_breeder": {
+        "flux": {
+          "mean": [
+            34.45878385863282
+          ],
+          "std_dev": [
+            0.1305505211261549
+          ]
+        }
+      },
+      "icrh_duct": {
+        "flux": {
+          "mean": [
+            1.478693077262429
+          ],
+          "std_dev": [
+            0.037730598480485635
+          ]
+        }
+      }
+    },
+    "icrh_duct_end_current": {
+      "mean": 0.00019,
+      "std_dev": 4.3333333333333314e-05
+    }
+  },
+  {
+    "run_id": "center_shift_icrh_10_width_icrh_10_source_device_MANTA_source_scenario_default",
+    "parameters": {
+      "radius": 455,
+      "triang": -0.5,
+      "center_shift_icrh": 10,
+      "width_icrh": 10,
+      "source_device": "MANTA",
+      "source_scenario": "default"
+    },
+    "energy_bins_eV": [
+      0.0,
+      20000000.0
+    ],
+    "energy_group_labels": [
+      "Total Flux (< 20 MeV)"
+    ],
+    "cells": {
+      "outer_breeder": {
+        "flux": {
+          "mean": [
+            37.99028906035214
+          ],
+          "std_dev": [
+            0.14865866463469582
+          ]
+        }
+      },
+      "inner_breeder": {
+        "flux": {
+          "mean": [
+            34.476588177501974
+          ],
+          "std_dev": [
+            0.14486329268548834
+          ]
+        }
+      },
+      "icrh_duct": {
+        "flux": {
+          "mean": [
+            0.06229047416021476
+          ],
+          "std_dev": [
+            0.002492291224298788
+          ]
+        }
+      }
+    },
+    "icrh_duct_end_current": {
+      "mean": 0.0,
+      "std_dev": 0.0
+    }
+  },
+  {
+    "run_id": "center_shift_icrh_10_width_icrh_50_source_device_MANTA_source_scenario_default",
+    "parameters": {
+      "radius": 455,
+      "triang": -0.5,
+      "center_shift_icrh": 10,
+      "width_icrh": 50,
+      "source_device": "MANTA",
+      "source_scenario": "default"
+    },
+    "energy_bins_eV": [
+      0.0,
+      20000000.0
+    ],
+    "energy_group_labels": [
+      "Total Flux (< 20 MeV)"
+    ],
+    "cells": {
+      "outer_breeder": {
+        "flux": {
+          "mean": [
+            38.00018971408879
+          ],
+          "std_dev": [
+            0.14121518124964513
+          ]
+        }
+      },
+      "inner_breeder": {
+        "flux": {
+          "mean": [
+            34.45052989684546
+          ],
+          "std_dev": [
+            0.13151409675544423
+          ]
+        }
+      },
+      "icrh_duct": {
+        "flux": {
+          "mean": [
+            1.4643740158098362
+          ],
+          "std_dev": [
+            0.03449959845024605
+          ]
+        }
+      }
+    },
+    "icrh_duct_end_current": {
+      "mean": 0.00015999999999999999,
+      "std_dev": 3.0550504633038946e-05
+    }
+  },
+  {
+    "run_id": "center_shift_icrh_0_width_icrh_10_source_device_MANTA_source_scenario_default",
+    "parameters": {
+      "radius": 455,
+      "triang": 0.5,
+      "center_shift_icrh": 0,
+      "width_icrh": 10,
+      "source_device": "MANTA",
+      "source_scenario": "default"
+    },
+    "energy_bins_eV": [
+      0.0,
+      20000000.0
+    ],
+    "energy_group_labels": [
+      "Total Flux (< 20 MeV)"
+    ],
+    "cells": {
+      "outer_breeder": {
+        "flux": {
+          "mean": [
+            52.79006682683847
+          ],
+          "std_dev": [
+            0.185392508397811
+          ]
+        }
+      },
+      "inner_breeder": {
+        "flux": {
+          "mean": [
+            21.87064460843022
+          ],
+          "std_dev": [
+            0.1363493029412985
+          ]
+        }
+      },
+      "icrh_duct": {
+        "flux": {
+          "mean": [
+            0.06120971474255719
+          ],
+          "std_dev": [
+            0.002740898547067773
+          ]
+        }
+      }
+    },
+    "icrh_duct_end_current": {
+      "mean": 9.999999999999996e-06,
+      "std_dev": 9.999999999999996e-06
+    }
+  },
+  {
+    "run_id": "center_shift_icrh_0_width_icrh_50_source_device_MANTA_source_scenario_default",
+    "parameters": {
+      "radius": 455,
+      "triang": 0.5,
+      "center_shift_icrh": 0,
+      "width_icrh": 50,
+      "source_device": "MANTA",
+      "source_scenario": "default"
+    },
+    "energy_bins_eV": [
+      0.0,
+      20000000.0
+    ],
+    "energy_group_labels": [
+      "Total Flux (< 20 MeV)"
+    ],
+    "cells": {
+      "outer_breeder": {
+        "flux": {
+          "mean": [
+            52.826758923155545
+          ],
+          "std_dev": [
+            0.1481978147865893
+          ]
+        }
+      },
+      "inner_breeder": {
+        "flux": {
+          "mean": [
+            21.831170730215447
+          ],
+          "std_dev": [
+            0.13728092612261603
+          ]
+        }
+      },
+      "icrh_duct": {
+        "flux": {
+          "mean": [
+            1.6222787041795894
+          ],
+          "std_dev": [
+            0.02833785630000194
+          ]
+        }
+      }
+    },
+    "icrh_duct_end_current": {
+      "mean": 0.0002399999999999999,
+      "std_dev": 4.988876515698584e-05
+    }
+  },
+  {
+    "run_id": "center_shift_icrh_10_width_icrh_10_source_device_MANTA_source_scenario_default",
+    "parameters": {
+      "radius": 455,
+      "triang": 0.5,
+      "center_shift_icrh": 10,
+      "width_icrh": 10,
+      "source_device": "MANTA",
+      "source_scenario": "default"
+    },
+    "energy_bins_eV": [
+      0.0,
+      20000000.0
+    ],
+    "energy_group_labels": [
+      "Total Flux (< 20 MeV)"
+    ],
+    "cells": {
+      "outer_breeder": {
+        "flux": {
+          "mean": [
+            52.784806095437396
+          ],
+          "std_dev": [
+            0.1949157508423656
+          ]
+        }
+      },
+      "inner_breeder": {
+        "flux": {
+          "mean": [
+            21.847611489949013
+          ],
+          "std_dev": [
+            0.1349700448434756
+          ]
+        }
+      },
+      "icrh_duct": {
+        "flux": {
+          "mean": [
+            0.06587456926536568
+          ],
+          "std_dev": [
+            0.0038366634150187903
+          ]
+        }
+      }
+    },
+    "icrh_duct_end_current": {
+      "mean": 0.0,
+      "std_dev": 0.0
+    }
+  },
+  {
+    "run_id": "center_shift_icrh_10_width_icrh_50_source_device_MANTA_source_scenario_default",
+    "parameters": {
+      "radius": 455,
+      "triang": 0.5,
+      "center_shift_icrh": 10,
+      "width_icrh": 50,
+      "source_device": "MANTA",
+      "source_scenario": "default"
+    },
+    "energy_bins_eV": [
+      0.0,
+      20000000.0
+    ],
+    "energy_group_labels": [
+      "Total Flux (< 20 MeV)"
+    ],
+    "cells": {
+      "outer_breeder": {
+        "flux": {
+          "mean": [
+            52.81814378605175
+          ],
+          "std_dev": [
+            0.17322945572516044
+          ]
+        }
+      },
+      "inner_breeder": {
+        "flux": {
+          "mean": [
+            21.828579271591305
+          ],
+          "std_dev": [
+            0.13973521413615173
+          ]
+        }
+      },
+      "icrh_duct": {
+        "flux": {
+          "mean": [
+            1.6146741340867865
+          ],
+          "std_dev": [
+            0.020653140517232903
+          ]
+        }
+      }
+    },
+    "icrh_duct_end_current": {
+      "mean": 0.00019999999999999993,
+      "std_dev": 3.651483716701104e-05
+    }
+  }
+]

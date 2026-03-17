@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material id="1" name="tungsten">
+    <density units="g/cm3" value="19.25"/>
+    <nuclide ao="0.0012" name="W180"/>
+    <nuclide ao="0.265" name="W182"/>
+    <nuclide ao="0.1431" name="W183"/>
+    <nuclide ao="0.3064" name="W184"/>
+    <nuclide ao="0.2843" name="W186"/>
+  </material>
+  <material id="2" name="breeder">
+    <density units="g/cm3" value="0.534"/>
+    <nuclide ao="0.6" name="Li6"/>
+    <nuclide ao="0.4" name="Li7"/>
+  </material>
+</materials>
