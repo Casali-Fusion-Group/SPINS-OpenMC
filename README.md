@@ -1,1 +1,13 @@
-# SPINS-OpenMCThe Simulated Plasma-Informed Neutron Source toolkit enables users to input detailed plasma information from plasma density and temperature profiles to define a neutron source in OpenMC.The required inputs include two file inputs (.txt, .dat, .npy, .csv accepted) that store 1D profile inputs and a plasma equilibrium file EQDSK (also know as a "gfile").---## 🚀 InstallationInstall with pip from the current directory:```bashpip install -e .
+# SPINS-OpenMC
+
+The Simulated Plasma-Informed Neutron Source toolkit enables users to input detailed plasma information from plasma density and temperature 2D or 1D profiles to define a neutron source in OpenMC.
+The required inputs include two file inputs (.txt, .dat, .npy, .csv accepted) that store 1D profile inputs and a plasma equilibrium file EQDSK (also know as a "gfile").
+
+---
+
+## 🚀 Installation
+
+Install with pip from the current directory:
+
+```bash
+pip install -e .
